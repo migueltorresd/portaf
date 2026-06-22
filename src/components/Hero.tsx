@@ -1,5 +1,4 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
-import TerminalCards from './TerminalCards'
 import RocketFallback from './RocketFallback'
 
 const Rocket3D = lazy(() => import('./Rocket3D'))
@@ -100,68 +99,8 @@ export default function Hero() {
               </Suspense>
             )}
           </div>
-
-          <aside className="hero-status">
-            <h3>STATUS.SYSTEM</h3>
-            <div className="status-row-hero">
-              <span>Sistema Operativo:</span>
-              <strong>Online</strong>
-            </div>
-            <div className="status-row-hero">
-              <span>Energía:</span>
-              <strong>100%</strong>
-            </div>
-            <div className="status-row-hero">
-              <span>Modo:</span>
-              <strong>Construyendo</strong>
-            </div>
-            <div className="status-row-hero">
-              <span>Foco:</span>
-              <strong>Impacto</strong>
-            </div>
-            <div className="status-row-hero">
-              <span>Mente:</span>
-              <strong>Siempre curiosa</strong>
-            </div>
-            <div className="hero-status-bars">
-              {Array.from({ length: 18 }).map((_, i) => (
-                <span key={i} />
-              ))}
-            </div>
-          </aside>
         </div>
       </div>
-
-      {/* ── Terminal cards grid ───────────────────────────────────────────── */}
-      <TerminalCards />
-
-      {/* ── Quote box ─────────────────────────────────────────────────────── */}
-      <aside className="quote-box reveal delay-2">
-        <div className="quote-mark">"</div>
-        <p>
-          No se trata solo de usar tecnología.
-          <br />
-          Se trata de crear soluciones que mejoren la forma en que trabajamos y aprendemos.
-        </p>
-        <div className="quote-avatar" aria-hidden="true">
-          <svg
-            viewBox="0 0 64 64"
-            className="quote-avatar-svg"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 12h32v8h4v24h-4v8H16v-8h-4V20h4z"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-            />
-            <path d="M24 6h16v6H24z" fill="currentColor" opacity="0.9" />
-            <path d="M22 26h8v8h-8zM34 26h8v8h-8z" fill="currentColor" />
-            <path d="M24 40h16v4H24z" fill="currentColor" />
-            <path d="M10 24h6v14h-6zM48 24h6v14h-6z" fill="currentColor" opacity="0.65" />
-          </svg>
-        </div>
-      </aside>
     </section>
   )
 }

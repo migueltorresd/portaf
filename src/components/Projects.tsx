@@ -4,7 +4,7 @@ const PROJECTS = [
     name: 'neXus',
     status: 'PRODUCCIÓN',
     statusColor: 'green',
-    desc: 'Co-creación y liderazgo de una plataforma interna de conocimiento en Sofka, alcanzando ~90% de adopción en el equipo. Centraliza procesos, documentación y recursos técnicos.',
+    desc: 'Plataforma interna de conocimiento en Sofka. Co-creación y liderazgo, ~90% de adopción.',
     tags: ['Node.js', 'NestJS', 'TypeScript', 'SQL'],
     metrics: [
       { label: 'Adopción', value: '~90%' },
@@ -17,7 +17,7 @@ const PROJECTS = [
     name: 'AI Agents & Automatización',
     status: 'EN CURSO',
     statusColor: 'purple',
-    desc: 'Diseño y orquestación de soluciones con LLMs para automatizar tareas y toma de decisiones. Implementación de RAG y bases de datos vectoriales como parte de arquitecturas de negocio.',
+    desc: 'Soluciones con LLMs para automatizar tareas y decisiones, con RAG y bases vectoriales.',
     tags: ['Python', 'LangChain', 'LangGraph', 'RAG'],
     metrics: [
       { label: 'Stack', value: 'LLMs + RAG' },
@@ -30,7 +30,7 @@ const PROJECTS = [
     name: 'Bots Conversacionales',
     status: 'PRODUCCIÓN',
     statusColor: 'green',
-    desc: 'Bots conversacionales en producción para atención multicanal en Hibot, usando Botpress y EasyFlow. APIs REST con Node.js y NestJS para extender funcionalidades e integraciones.',
+    desc: 'Bots multicanal en producción (Hibot) con Botpress/EasyFlow y APIs REST en Node/NestJS.',
     tags: ['Node.js', 'NestJS', 'Botpress', 'REST'],
     metrics: [
       { label: 'Canal', value: 'Multicanal' },

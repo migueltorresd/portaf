@@ -3,25 +3,25 @@ const TIMELINE = [
     year: '2024 →',
     role: 'Consultor en Desarrollo · AI Center',
     company: 'Sofka',
-    desc: 'Diseño y orquestación de soluciones con LLMs (Python, LangChain, LangGraph), RAG y bases de datos vectoriales. Co-creación y liderazgo de neXus (~90% de adopción) y formación de +20 aprendices.',
+    desc: 'Soluciones con LLMs (LangChain, LangGraph, RAG). Co-creación de neXus (~90% adopción) y formación de +20 aprendices.',
   },
   {
     year: '2025 →',
     role: 'Tutor de Programación',
     company: 'AlgoNova',
-    desc: 'Formación en lógica de programación y pensamiento computacional con Python y Scratch, con experiencias prácticas orientadas a resolución de problemas.',
+    desc: 'Formación en lógica de programación y pensamiento computacional con Python y Scratch.',
   },
   {
     year: '2023',
     role: 'Desarrollador Full Stack',
     company: 'Hibot Chat',
-    desc: 'Bots conversacionales en producción para atención multicanal (Botpress, EasyFlow) y APIs REST con Node.js y NestJS. Despliegues en Google Cloud.',
+    desc: 'Bots conversacionales multicanal y APIs REST en Node/NestJS. Despliegues en Google Cloud.',
   },
   {
     year: '2023',
     role: 'Desarrollador Full Stack',
     company: 'SofkaU',
-    desc: 'Aplicaciones web con NestJS, Angular y TypeScript bajo arquitectura limpia (SOLID), programación reactiva con RxJS y mensajería (RabbitMQ, Kafka).',
+    desc: 'Apps web con NestJS, Angular y TypeScript bajo arquitectura limpia (SOLID) y mensajería.',
   },
 ]
 
@@ -75,25 +75,6 @@ export default function About() {
                 <p className="trait-desc">{desc}</p>
               </div>
             ))}
-          </div>
-
-          <div className="about-values">
-            <div className="section-label" style={{ marginTop: '1.8rem' }}>
-              VALORES
-            </div>
-            <div className="values-list">
-              {[
-                'Impacto sobre perfección',
-                'Aprendizaje continuo',
-                'Comunicación directa',
-                'Colaboración real',
-              ].map((v) => (
-                <div key={v} className="value-item">
-                  <span className="value-dot" />
-                  {v}
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>
